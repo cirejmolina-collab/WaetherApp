@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Weather App</h1>
+    <button id="themeToggle">🌙</button>
+  </header>
+
+  <main>
+    <input type="text" id="cityInput" placeholder="Enter city name">
+    <button id="searchBtn">Search</button>
+
+    <p id="loading">Loading...</p>
+    <p id="error"></p>
+
+    <div id="weatherResult"></div>
+    
+    <h3 id="forecastTitle" style="display:none;">5-Day Forecast</h3>
+    <div id="forecast"></div>
+  </main>
+
+  <footer>
+    <p>Data from OpenWeather API</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
